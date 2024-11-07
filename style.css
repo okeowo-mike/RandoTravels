@@ -43,7 +43,6 @@ a {
   transform: translateY(0); /* Reset to normal position */
 }
 
-
 /* show case section ///////////////////////////////////////// */
 #showcase-container {
   background: url(./img/12.jpg) no-repeat center center/cover;
@@ -58,8 +57,8 @@ a {
   align-items: center;
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   z-index: 3;
 }
 
@@ -75,6 +74,7 @@ a {
   display: flex;
   gap: 1rem;
   list-style: none;
+  font-size: 0.8rem;
 }
 .menu ul a:hover {
   transition: all ease-in 0.7s;
@@ -84,7 +84,7 @@ a {
 /* ///////////////////////////////////////// */
 
 #showcase-text {
-  height: 88vh;
+  height: 80vh;
   /* width: 100vw; */
 }
 
@@ -136,8 +136,8 @@ a {
 }
 
 .btn {
-  width: 180px;
-  height: 45px;
+  width: 140px;
+  height: 35px;
   color: #000000;
   font-size: 15px;
   background: #ffffff;
@@ -214,10 +214,10 @@ a {
 /* Position the text over the image */
 .slider-text {
   position: absolute;
-  top: 40px; /* Position from the top of the slider */
+  top: 20px; /* Position from the top of the slider */
   left: 50%;
   transform: translateX(-50%); /* Center the text horizontally */
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
@@ -240,7 +240,7 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 500px; /* Set desired height */
+  height: 350px; /* Set desired height */
   border-radius: 5px;
 }
 
@@ -265,7 +265,7 @@ a {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 120px; /*Adjust this to position above dots*/
+  bottom: 70px; /*Adjust this to position above dots*/
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -274,7 +274,7 @@ a {
 }
 
 .slide-description {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow for readability */
 }
@@ -316,6 +316,8 @@ a {
   margin-top: 5rem;
 }
 .what-container {
+  /* max-width: 700px; */
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -325,14 +327,17 @@ a {
   color: var(--color-2-DeepOceanBlue);
 }
 .card-container {
-  padding-top: 1.5rem;
+  max-width: 300px;
   display: flex;
-  gap: 4rem;
+  justify-content: center;
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .what-container img {
-  width: 350px;
-  height: 370px;
+  width: 270px;
+  height: 250px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -348,7 +353,7 @@ a {
 .text-what h3 {
   max-width: 300px;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   color: var(--color-1-SkyBlue);
 }
 .text-what ul {
@@ -356,7 +361,8 @@ a {
 }
 
 .text-what ul li {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .card {
@@ -410,7 +416,8 @@ a {
 }
 
 .book-trip-container {
-  max-width: 700px;
+  max-width: 600px;
+  font-size: 0.9rem;
 }
 
 .book-trip-container ul li {
@@ -459,8 +466,8 @@ a {
   position: relative;
   background: var(--color-1-SkyBlue);
   overflow: hidden;
-  height: 180px;
-  width: 300px;
+  height: 130px;
+  width: 200px;
 }
 .itemg::after {
   content: "";
@@ -541,7 +548,7 @@ a {
   color: #fefefe !important;
 }
 .item-text-category {
-  font-size: 1.2rem;
+  font-size: 1rem;
   /* opacity: 0.7; */
   margin: 0;
   color: #ffffff;
@@ -557,22 +564,23 @@ a {
 }
 
 .footer-container {
-  padding-top: 3rem;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
   max-width: 1200px;
   margin: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .footer-container h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-container ul li {
   list-style: none;
   margin-bottom: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .footer-container ul li a {
@@ -590,6 +598,7 @@ a {
   align-items: center;
 }
 .copy-right p {
-  padding-top: 1rem;
+  font-size: 0.8rem;
+  padding-top: 0.9rem;
   padding-bottom: 0.5rem;
 }
