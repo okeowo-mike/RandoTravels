@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>We Travel</title>
+    <title>Rando Travels</title>
   </head>
   <body>
     <div id="main-container">
@@ -14,13 +14,13 @@
           <nav id="navbar">
             <div class="navbar">
               <div class="logo">
-                <p>LOGO HERE</p>
+                <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
               </div>
               <div class="menu">
                 <ul>
-                  <li><a href="./contact.html">SEARCH</a></li>
-                  <li><a href="./discover.html">DISCOVER</a></li>
-                  <li><a href="./contact.html">CONTACT</a></li>
+                  <li><a href="./about.html">ABOUT US</a></li>
+                  <li><a href="#hot-deals">DISCOVER</a></li>
+                  <li><a href="#main-footer">CONTACT</a></li>
                 </ul>
               </div>
             </div>
@@ -28,8 +28,9 @@
 
           <div id="showcase-text">
             <div class="text">
-              <h1>LIVE LIFE...TRAVEL BETTER</h1>
-              <p>A trip to long lasting memories...</p>
+              <h1>RANDO</h1>
+              <h2>LIVE LIFE...TRAVEL BETTER</h2>
+              <!-- <p>A trip to long lasting memories...</p> -->
             </div>
             <div class="showcase-btn">
               <a href="./contact.html" class="btn show-btn">EXPLORE</a>
@@ -75,65 +76,147 @@
       <!-- section 3 ///////////////////////////////////////// -->
       <section class="fade-in-section" id="what">
         <div class="what-container">
-          <h2>WHAT WE OFFER</h2>
-          <div class="card-container">
-            <div class="card card-1">
-              <div class="what-img">
+          <h2 class="h2 soft-line">WHAT WE OFFER</h2>
+          <div class="box-container">
+            <div class="box box-1">
+              <!-- <div class="what-img">
                 <img src="./img/10.jpg" alt="Image" />
+              </div> -->
+              <div class="what-icon">
+                <img src="./img/booking.png" alt="" />
               </div>
               <div class="text-what">
                 <h3>Booking and Reservation Services</h3>
+                <br />
                 <ul>
                   <li>
-                    Flights, Hotels, and Transportation: Partnering with
-                    airlines, hotels, and car rental agencies to offer
-                    comprehensive booking options.
+                    <span class="green">&#10003;</span> Flights, Hotels, and
+                    Transportation: Partnering with airlines, hotels, and car
+                    rental agencies to offer comprehensive booking options.
                   </li>
                   <li>
-                    Package Deals: Offering customizable packages that include
-                    flights, accommodation, tours, and local transportation.
+                    <span class="green">&#10003;</span> Package Deals: Offering
+                    customizable packages that include flights, accommodation,
+                    tours, and local transportation.
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="card card-2">
-              <div class="what-img">
+            <div class="box box-2">
+              <!-- <div class="what-img">
                 <img src="./img/15.jpg" alt="Image" />
+              </div> -->
+
+              <div class="what-icon">
+                <img src="./img/map.png" alt="" />
               </div>
               <div class="text-what">
                 <h3>Personalized Travel Planning and Itinerary Management</h3>
                 <ul>
                   <li>
-                    Customized Itineraries: Creating personalized itineraries
-                    based on travelers' preferences, including activity
-                    recommendations, dining suggestions, and local experiences.
+                    <span class="green">&#10003;</span> Customized Itineraries:
+                    Creating personalized itineraries based on travelers'
+                    preferences, including activity recommendations, dining
+                    suggestions, and local experiences.
                   </li>
                   <li>
-                    Guided Tours and Excursions: Offering a variety of guided
-                    tours, from historical sites to adventure excursions.
+                    <span class="green">&#10003;</span> Guided Tours and
+                    Excursions: Offering a variety of guided tours, from
+                    historical sites to adventure excursions.
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="card card-3">
-              <div class="what-img">
+            <div class="box box-3">
+              <!-- <div class="what-img">
                 <img src="./img/4.jpg" alt="Image" />
+              </div> -->
+              <div class="what-icon">
+                <img src="./img/support.png" alt="" />
               </div>
               <div class="text-what">
                 <h3>24/7 Customer Support and Travel Assistance</h3>
                 <ul>
                   <li>
-                    Emergency Assistance: Helping with issues like lost luggage,
-                    flight cancellations, or health emergencies while traveling.
+                    <span class="green">&#10003;</span> Emergency Assistance:
+                    Helping with issues like lost luggage, flight cancellations,
+                    or health emergencies while traveling.
                   </li>
                   <li>
-                    Real-Time Travel Updates: Offering real-time notifications
-                    about flights, weather, or any changes in plans.
+                    <span class="green">&#10003;</span> Real-Time Travel
+                    Updates: Offering real-time notifications about flights,
+                    weather, or any changes in plans.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- /////////////////////////////////////////////////// -->
+      <section id="hot-deals" class="hot-deals fade-in-section">
+        <h2 class="h2 soft-line">BEST DEALS</h2>
+        <div class="card-container">
+          <button class="arrow left" onclick="scrollRightt()">&#10094;</button>
+          <div class="cards">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/22.jpg" alt="" />
+              </div>
+              <h3>&#x1F4CD; Paris, France</h3>
+              <div class="dets">
+                <p>👥 2 Max</p>
+                <p class="dets-p">$1,200</p>
+                <p>1 Week</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/23.jpg" alt="" />
+              </div>
+              <h3>&#x1F4CD; Kyoto, Japan</h3>
+              <div class="dets">
+                <p>👥 4 Max</p>
+                <p class="dets-p">$4,200</p>
+                <p>2 Weeks</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/24.jpg" alt="" />
+              </div>
+              <h3>&#x1F4CD; Cape Town, South Africa</h3>
+              <div class="dets">
+                <p>👥 2 Max</p>
+                <p class="dets-p">$2,400</p>
+                <p>2 Weeks</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/25.jpg" alt="" />
+              </div>
+              <h3>&#x1F4CD; Santorini, Greece</h3>
+              <div class="dets">
+                <p>👥 6 Max</p>
+                <p class="dets-p">$6,800</p>
+                <p>2 Weeks</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/20.jpg" alt="" />
+              </div>
+              <h3>&#x1F4CD; Rome, Italy</h3>
+              <div class="dets">
+                <p>👥 2 Max</p>
+                <p class="dets-p">$2,200</p>
+                <p>1 Week</p>
+              </div>
+            </div>
+          </div>
+          <button class="arrow right" onclick="scrollRight()">&#10095;</button>
         </div>
       </section>
 
@@ -145,32 +228,35 @@
           </div>
 
           <div class="trip-details">
-            <h3>BOOK YOUR NEXT TRIP IN 3 EASY STEPS</h3>
+            <h3 class="h2 soft-line">BOOK YOUR NEXT TRIP IN 3 EASY STEPS</h3>
             <div class="book-trip-container">
               <ul>
                 <li>
                   <h4>Choose Your Destination and Dates</h4>
                   <p>
-                    Decide on the Location and Travel Dates: Select where you
-                    want to go and the dates for your trip. Most travel
-                    companies offer destination guides, seasonal
-                    recommendations, or even pre-planned itineraries.
+                    <span class="green">&#10003;</span> Decide on the Location
+                    and Travel Dates: Select where you want to go and the dates
+                    for your trip. Most travel companies offer destination
+                    guides, seasonal recommendations, or even pre-planned
+                    itineraries.
                   </p>
                 </li>
                 <li>
                   <h4>Select Your Package and Customize</h4>
                   <p>
-                    Pick a Travel Package: Many companies offer various packages
-                    (e.g., all-inclusive, adventure, relaxation). Choose one
-                    that best fits your interests and budget.
+                    <span class="green">&#10003;</span> Pick a Travel Package:
+                    Many companies offer various packages (e.g., all-inclusive,
+                    adventure, relaxation). Choose one that best fits your
+                    interests and budget.
                   </p>
                 </li>
                 <li>
                   <h4>Confirm Booking and Make Payment</h4>
                   <p>
-                    Review and Confirm Details: Double-check your itinerary,
-                    ensuring that the flight, accommodation, and activities
-                    align with your expectations.
+                    <span class="green">&#10003;</span> Review and Confirm
+                    Details: Double-check your itinerary, ensuring that the
+                    flight, accommodation, and activities align with your
+                    expectations.
                   </p>
                 </li>
               </ul>
@@ -182,8 +268,8 @@
       <!-- section 6 instagram ////////////////////////////////// -->
       <section class="fade-in-section" id="ig">
         <div id="instagram">
-          <h2>FOLLOW US ON INSTAGRAM</h2>
-          <p class="ig-p">@WeTravel</p>
+          <h2 class="h2 soft-line">FOLLOW US ON INSTAGRAM</h2>
+          <p class="ig-p">@randoTravels</p>
 
           <div id="itemsg">
             <div class="itemsg">
@@ -194,7 +280,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -222,7 +308,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -250,7 +336,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -278,7 +364,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -306,7 +392,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -334,7 +420,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -362,7 +448,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -390,7 +476,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -418,7 +504,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -446,7 +532,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -474,7 +560,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -502,7 +588,7 @@
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <a href=""
-                      ><p class="item-text-category">WeTravel</p>
+                      ><p class="item-text-category">randoTravels</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -536,8 +622,6 @@
               <ul>
                 <li><a href="./comingsoon.html">Contact Us</a></li>
                 <li><a href="./comingsoon.html">FAQs</a></li>
-                <li><a href="./comingsoon.html">Shipping & Returns</a></li>
-                <li><a href="./comingsoon.html">Stocks</a></li>
                 <li><a href="./comingsoon.html">SMS Sign Up</a></li>
               </ul>
             </div>
@@ -548,7 +632,7 @@
             <div class="discover-list">
               <ul>
                 <li>
-                  <a href="./comingsoon.html">Quiz: What's Your Scent?</a>
+                  <a href="./comingsoon.html">Dream Location?</a>
                 </li>
                 <li><a href="./comingsoon.html">Become An Affiliate</a></li>
                 <li><a href="./comingsoon.html">Refer A Friend</a></li>
@@ -560,7 +644,7 @@
             <h3>COMPANY</h3>
             <div class="company-list">
               <ul>
-                <li><a href="./comingsoon.html">About Us</a></li>
+                <li><a href="./about.html">About Us</a></li>
                 <li><a href="./comingsoon.html">Blog</a></li>
                 <li><a href="./comingsoon.html">Reviews</a></li>
                 <li><a href="./comingsoon.html">Press</a></li>
@@ -583,7 +667,7 @@
         </div>
 
         <div class="copy-right">
-          <p>Copyright &copy; 2024 WeTravel, All Rights Reserved</p>
+          <p>Copyright &copy; 2024 RandoTravels, All Rights Reserved</p>
         </div>
       </footer>
     </div>

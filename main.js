@@ -87,3 +87,37 @@ const navbarLinks = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
+
+// hot deals section /////////////////////////////
+// Scroll function to move cards
+function scrollLeft() {
+    const container = document.querySelector('.cards');
+    container.scrollBy({
+        right: 220, // Adjust scroll distance as needed
+        behavior: 'smooth'
+    });
+}
+
+function scrollRightt() {
+    const container = document.querySelector('.cards');
+    container.scrollBy({
+        left: -220, // Adjust scroll distance as needed
+        behavior: 'smooth'
+    });
+}
+function scrollRight() {
+    const container = document.querySelector('.cards');
+    container.scrollBy({
+        left: 220, // Adjust scroll distance as needed
+        behavior: 'smooth'
+    });
+}
+
+// Optional auto-center effect on resize
+window.addEventListener('resize', () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+        card.style.transform = 'scale(1)';
+    });
+});
+
