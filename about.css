@@ -20,7 +20,8 @@
 }
 
 body {
-  background-color: var(--color-8);
+  /* background: url(./img/27.png)  center center/cover; */
+  font-family: 'Playfair Display', serif;
 }
 
 body::-webkit-scrollbar {
@@ -71,7 +72,7 @@ a {
   justify-self: center;
   align-items: center;
   /* padding-top: 12rem; */
-  font-size: clamp(4rem, 5.5vw, 8.5rem);
+  font-size: clamp(4rem, 6.5vw, 8.5rem);
   color: var(--color-5);
   height: 70vh;
 }
