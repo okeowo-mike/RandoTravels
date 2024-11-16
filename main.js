@@ -1,10 +1,10 @@
-// Sticky menu transparency
+// Sticky menu transparency ///////////////////////////////////////////
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   navbar.style.background = window.scrollY > 100 ? "rgba(0, 0, 0, 0.7)" : "rgba(0, 0, 0, 0)";
 });
 
-// Slider functionality
+// Slider functionality ////////////////////////////////////////////////
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
 const slideDescription = document.querySelector('.slide-description');
@@ -58,7 +58,7 @@ setInterval(nextSlide, intervalTime);
 // Initialize by showing the first slide
 showSlide(currentIndex);
 
-// Fade-in effect on scroll
+// Fade-in effect on scroll ////////////////////////////////////////////
 const fadeInSections = document.querySelectorAll('.fade-in-section');
 
 function checkFadeIn() {
@@ -80,15 +80,32 @@ window.addEventListener('scroll', checkFadeIn);
 // Initial check to apply fade-in effect for sections already in view on load
 checkFadeIn();
 
-// Hamburger Menu Toggle for Mobile
-const hamburger = document.getElementById("hamburger-menu");
-const navbarLinks = document.querySelector(".nav-links");
+// Hamburger Menu Toggle for Mobile //////////////////////////////////
+// const hamburger = document.getElementById("hamburger-menu");
+// const navbarLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
+// hamburger.addEventListener("click", () => {
+//   navbarLinks.classList.toggle("active");
+// });
+
+// hamburger menu /////////////////////////////////////////////////////
+
+const primaryNav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+navToggle.addEventListener("click", () => {
+  const visibility = primaryNav.getAttribute("data-visible");
+
+  if (visibility === "false") {
+    primaryNav.setAttribute("data-visible", true);
+    navToggle.setAttribute("aria-expanded", true);
+  } else if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", false);
+    navToggle.setAttribute("aria-expanded", false);
+  }
 });
 
-// hot deals section /////////////////////////////
+// hot deals section ////////////////////////////////////////////////////
 // Scroll function to move cards
 function scrollLeft() {
     const container = document.querySelector('.cards');
