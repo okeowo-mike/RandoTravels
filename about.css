@@ -61,6 +61,10 @@ a {
   font-size: 1.3rem;
 }
 
+.nav2 {
+  display: none;
+}
+
 /* ///////////////////////////////////////////////////////////// */
 #contact-show {
   height: 70vh;
@@ -327,6 +331,86 @@ a {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+
+  /* nav secttion //////////////////////////////////////// */
+  /* hamburger menu //////////////////// */
+
+
+  .navbar {
+    display: none;
+  }
+
+  .nav2 {
+    /* margin-top: -7rem; */
+    display: block;
+    /* position: fixed; */
+  }
+
+  .logo2 img {
+    width: 150px;
+  }
+
+  .nav2-conatiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-top: 0rem;
+    position: fixed;
+    z-index: 5000;
+    /* background: hsla(0, 1%, 71%, 0.5); */
+    /* background-color: rgba(239, 239, 239, 0.9); */
+  }
+
+  .primary-navigation {
+    position: fixed;
+    inset: 0 0 0 40%;
+    background: hsla(0, 1%, 71%, 0.6);
+    border-radius: 5px;
+    background-color: rgba(239, 239, 239, 0.8);
+    /* backdrop-filter: blur(6rem); */
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    padding: min(30vh, 5rem) 2em;
+    padding-right: 7rem;
+    margin-top: 0.2rem;
+    transform: translateX(100%);
+    transition: transform 450ms ease-out;
+    z-index: 1000;
+  }
+  .primary-navigation li a {
+    color: var(--color-3-teal);
+    font-weight: 500;
+    font-size: 1.1rem;
+    /* margin-bottom: rem; */
+  }
+
+  .primary-navigation li {
+    margin-bottom: 2rem;
+    list-style: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    background: url(./img/open.png) no-repeat center center/cover;
+    background-repeat: no-repeat;
+    border: 0;
+    width: 1.3rem;
+    aspect-ratio: 1;
+    right: 2rem;
+    z-index: 9999;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: url(./img/close.png) no-repeat center center/cover;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
   .contact-details {
     flex-direction: column;
   }
