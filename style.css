@@ -94,7 +94,7 @@ a {
   gap: 1rem;
   list-style: none;
   color: var(--color-5);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .menu ul a:hover {
   transition: all ease-in 0.5s;
@@ -362,8 +362,8 @@ a {
 }
 
 .what-icon img {
-  width: 70px;
-  padding-top: 10px;
+  width: 60px;
+  padding-top: 15px;
 }
 .what-icon {
   display: flex;
@@ -475,10 +475,7 @@ a {
   object-fit: cover;
   width: 100%;
   height: 100%;
-
 }
-
-
 
 .card .dets {
   display: grid;
@@ -503,7 +500,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   scroll-snap-align: center;
   transition: transform 0.3s ease;
 }
@@ -803,7 +800,6 @@ a {
   }
   /* nav secttion //////////////////////////////////////// */
   /* hamburger menu //////////////////// */
-
 
   #showcase nav {
     display: none;
@@ -1123,7 +1119,6 @@ a {
     scroll-snap-align: center;
     transition: transform 0.3s ease;
     padding: 0px;
-  
   }
 
   .cards .card {
@@ -1233,7 +1228,7 @@ a {
   }
 
   .footer {
-  width: auto;
+    width: auto;
   }
 
   .footer-container {
